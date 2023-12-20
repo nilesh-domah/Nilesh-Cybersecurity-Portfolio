@@ -1,0 +1,22 @@
+Examine input and output in the shell
+-------------------------------------
+
+1. Generate output with the echo command
+
+	echo hello
+
+	echo "hello"
+
+	echo "Nilesh"
+
+
+2. Generate output with the expr command
+
+	expr 32 - 8
+	
+	expr 3500 * 12
+
+
+3. Clear the Bash shell
+
+	clear

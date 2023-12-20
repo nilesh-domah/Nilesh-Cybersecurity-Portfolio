@@ -1,0 +1,60 @@
+Filter with AND, OR, and NOT
+----------------------------
+
+1. Retrieve after hours failed login attempts
+
+ a. Use the AND operator to retrieve the failed login attempts that occurred after business hours
+
+	SELECT *
+	FROM log_in_attempts
+	WHERE login_time > '18:00' AND success = FALSE;
+
+
+
+2. Retrieve login attempts on specific dates
+
+ a.  Use the OR operator to retrieve the failed login attempts on the specified days
+
+	SELECT * 
+	FROM log_in_attempts 
+	WHERE login_date = '2022-05-09' OR login_date = '2022-05-08';
+
+ 
+
+3. Retrieve login attempts outside of Mexico
+
+ a. Retrieve login attempts that did not originate in Mexico
+
+	SELECT * 
+	FROM log_in_attempts 
+	WHERE NOT country LIKE 'MEX%';
+
+
+
+4. Retrieve employees in Marketing
+
+ a. Write a SQL query to retrieve this information from the employees table
+
+	SELECT * 
+	FROM employees 
+	WHERE department = 'Marketing' AND office LIKE 'East%';
+
+
+
+5. Retrieve employees in Finance or Sales
+
+ a. Write a SQL query to retrieve records for employees in the 'Finance' or the 'Sales' department
+
+	SELECT * 
+	FROM employees 
+	WHERE department = 'Finance' OR department = 'Sales';
+
+
+
+6. Retrieve all employees not in IT
+
+ a. Write a SQL query to retrieve records for employees who are not in the 'Information Technology' department
+
+	SELECT * 
+	FROM employees 
+	WHERE NOT department = 'Information Technology';

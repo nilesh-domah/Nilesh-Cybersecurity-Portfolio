@@ -1,0 +1,45 @@
+Create hash values
+------------------
+
+1. Generate hashes for files
+
+ a. List the contents of the directory
+
+	ls
+
+ b. Display the contents of the file1.txt file
+
+	cat file1.txt
+
+ c. Display the contents of the file2.txt file
+
+	cat file2.txt
+
+ d. Generate the hash of the file1.txt file
+
+	sha256sum file1.txt
+
+ e. Generate the hash of the file2.txt file
+
+	sha256sum file2.txt
+
+
+
+2. Compare hashes
+ 
+ a. Generate the hash of the file1.txt file, and send the output to a new file called file1hash
+
+	sha256sum file1.txt >> file1hash
+
+ b. Generate the hash of the file2.txt file, and send the output to a new file called file2hash
+
+	sha256sum file2.txt >> file2hash
+
+ c. Display the hash values in the file1hash and file2hash files
+
+	cat file1hash
+	cat file2hash
+
+ d. Highlight the differences in the file1hash and file2hash files
+
+	cmp file1hash file2hash

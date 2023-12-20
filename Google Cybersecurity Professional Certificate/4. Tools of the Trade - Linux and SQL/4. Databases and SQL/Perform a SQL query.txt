@@ -1,0 +1,54 @@
+Perform a SQL query
+-------------------
+
+1. Retrieve employee device data
+
+ a. Select all device information from the machines table
+
+	SELECT *
+	FROM machines;
+
+ b. Select only the device_id and email_client columns from the machines table
+
+	SELECT device_id, email_client
+	FROM machines;
+
+ c. Return only the device_id, operating_system, and OS_patch_date columns from the machines table
+
+	SELECT device_id, operating_system, OS_patch_date
+	FROM machines;
+
+
+
+2. Investigate login activity
+
+ a. Write a SQL query to select the event_id and country columns from the log_in_attempts table
+
+	SELECT event_id, country
+	FROM log_in_attempts;
+
+ b. Write a SQL query that selects the username, login_date, and login_time columns from the log_in_attempts table
+
+	SELECT username, login_date, login_time
+	FROM log_in_attempts;
+
+ c. Write a SQL query that selects all columns from the log_in_attempts table, using a single symbol after the SELECT keyword
+
+	SELECT *
+	FROM log_in_attempts;
+
+
+
+3. Order login attempts data
+
+ a. Order log_in_attempts data by login_date
+
+	SELECT *
+	FROM log_in_attempts
+	ORDER BY login_date;
+
+ b. Modify the query from the previous step by adding the login time to the ORDER BY clause
+
+	SELECT *
+	FROM log_in_attempts
+	ORDER BY login_date, login_time;

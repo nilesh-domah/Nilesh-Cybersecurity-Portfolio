@@ -1,0 +1,38 @@
+Add and manage users with Linux commands
+----------------------------------------
+
+1. Add a new user
+
+ a. Write a command to add a user called researcher9 to the system
+
+	sudo useradd researcher9
+
+ b. Use the usermod command and -g option to add researcher9 to the research_team group as their primary group
+
+	sudo usermod -g research_team researcher9
+	sudo useradd researcher9 -g research_team
+
+
+2. Assign file ownership
+
+ a. Use the chown command to make researcher9 the owner of /home/researcher2/projects/project_r.txt
+
+	sudo chown researcher9 /home/researcher2/projects/project_r.txt
+
+
+3. Add the user to a secondary group
+
+ a. Use the usermod command with the -a and -G options to add researcher9 to the sales_team group as a secondary group
+
+	sudo usermod -a -G sales_team researcher9
+
+
+4. Delete a user
+
+ a. Run a command to delete researcher9 from the system
+	
+	sudo userdel researcher9
+
+ b. Delete the researcher9 group that is no longer required
+
+	sudo groupdel researcher9

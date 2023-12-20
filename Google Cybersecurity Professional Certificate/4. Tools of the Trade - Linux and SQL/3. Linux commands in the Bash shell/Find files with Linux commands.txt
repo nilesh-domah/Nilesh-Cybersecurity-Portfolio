@@ -1,0 +1,59 @@
+Find files with Linux commands
+------------------------------
+
+1. Get the current directory information
+
+ a. Display your working director
+
+	pwd
+
+ b. Display the names of the files and directories in the current working directory
+
+	ls
+
+
+2. Change direcotry and list the subdirectories
+
+ a. Navigate to the /home/analyst/reports directory
+
+	cd reports
+
+ 	cd /home/analyst/reports
+
+ b. Display the files and subdirectories in the /home/analyst/reports
+
+	ls
+
+
+3. Locate and read the contents of a file
+
+ a. Navigate to the /home/analyst/reports/users directory
+
+	cd /home/analyst/reports/users
+
+	cd users
+
+ b. List the files in the current directory
+
+	ls
+
+ c. Display the contents of the Q1_added_users.txt
+
+	cat Q1_added_users.txt
+
+	cat /home/analyst/reports/users/Q1_added_users.txt
+
+
+4. Navigate to a directory and locate a file
+
+ a. Navigate to the /home/analyst/logs directory
+
+	cd /home/analyst/logs
+
+ b. Display the name of the file it contains
+
+	ls
+
+ c. Display the first 10 lines of this file
+
+	head server_logs.txt

@@ -1,0 +1,52 @@
+Decrypt an encryptyed message
+-----------------------------
+
+1. Read the contents of a file
+
+ a. List the files in the current working directory
+
+ 	ls /home/analyst
+
+ b. List the contents of the README.txt file
+
+	cat README.txt
+
+
+
+2. Find a hidden file
+
+ a. Change to the caesar subdirectory of your home directory
+
+	cd caesar
+
+ b. List all files, including hidden files, in your home directory
+
+	ls -a
+
+ c. List the contents of the .leftShift3 file
+
+	cat .leftShift3
+
+ d. Decrypt the Caesar cipher in the .leftShift3 file
+
+	cat .leftShift3 | tr "d-za-cD-ZA-C" "a-zA-Z"
+
+ e. Return to your home directory
+
+	cd ~
+
+
+
+3. Decrypt a file
+
+ a. Decrypt the encrypted file
+	
+	openssl aes-256-cbc -pbkdf2 -a -d -in Q1.encrypted -out Q1.recovered -k ettubrute
+
+ b. List the contents of your current working directory
+
+	 ls
+
+ c. List the contents of the Q1.recovered file
+
+	cat Q1.recovered

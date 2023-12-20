@@ -1,0 +1,46 @@
+Install software in a Linux distribution
+-----------------------------------------
+
+1. Ensure that APT is installed
+
+	apt
+
+
+2. Install and uninstall the Suricata explanation
+
+ a. Use the APT package manager to install the Suricata explanation
+
+	sudo apt install suricata
+
+ b. Verify that Suricata 
+
+	suricata
+
+ c. Use the APT package manager to uninstall Suricata
+
+	sudo apt remove suricata
+
+ d. Verify that Suricata has been uninstalled by running the application command again
+
+	suricata
+
+
+3. Install the tcpdump application
+
+	sudo apt install tcpdump
+
+
+4. List the installed applications
+
+	apt list --installed
+
+
+5. Reinstall the Suricata application
+
+ a. Run the command to install the Suricata application
+
+	sudo apt install suricata
+
+ b. Use the APT package manager to list the installed applications
+
+	apt list --installed

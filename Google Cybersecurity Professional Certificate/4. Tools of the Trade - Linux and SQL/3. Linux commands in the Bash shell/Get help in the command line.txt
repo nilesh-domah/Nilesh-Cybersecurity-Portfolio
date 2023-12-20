@@ -1,0 +1,41 @@
+Get help in the command line
+-----------------------------
+
+1. Learn more about commands
+
+ a. Run the whatis command to get a short description of cat
+
+	whatis cat
+
+ b. Use the man command to get more details about cat
+
+	man cat
+
+ c. Use apropos to find a command that returns the first part of a file
+
+	apropos -a first part file
+
+
+
+2. Explore the useradd command
+
+ a. Use the most appropriate Linux command to get help on the useradd command and learn more about all of its options
+
+	man useradd
+
+
+
+3. Explore the rm and rmdir commands
+
+ a. Use the most appropriate Linux commands to quickly remind yourself what each command does
+
+	whatis rm
+	whatis rmdir
+
+
+
+4. Determine which command to use
+
+ a. Use the most appropriate Linux command with these keywords to identify what command to use
+
+	apropos -a create new group

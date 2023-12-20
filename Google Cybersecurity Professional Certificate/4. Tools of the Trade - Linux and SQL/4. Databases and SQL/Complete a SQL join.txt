@@ -1,0 +1,41 @@
+Complete a SQL join
+-------------------
+
+1. Match employees to their machines
+
+ a. Retrieve all records from the machines table
+
+	SELECT *
+	FROM machines;
+
+ b. Complete the query to perform an inner join between the machines and employees tables on the device_id column
+
+	SELECT * 
+	FROM machines 
+	INNER JOIN employees ON machines.device_id = employees.device_id;
+
+
+
+2. Return more data
+ 
+ a. Connect the machines and employees tables through a left join
+
+	SELECT * 
+	FROM machines 
+	LEFT JOIN employees ON machines.device_id = employees.device_id;
+
+ b. Connect the machines and employees tables through a right join
+
+	SELECT * 
+	FROM machines 
+	RIGHT JOIN employees ON machines.device_id = employees.device_id;
+
+
+
+3. Retrieve login attempt data
+
+ a. Perform an inner join on the employees and log_in_attempts tables
+
+	SELECT * 
+	FROM employees 
+	INNER JOIN log_in_attempts ON employees.username = log_in_attempts.username;

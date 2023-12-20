@@ -1,0 +1,12 @@
+Common Elements of Internal Audits
+----------------------------------
+
+- Establishing the scope and goals
+
+- Conducting a risk assessment
+
+- Completing a controls assessment
+
+- Assessing compliance
+
+- Communicating results

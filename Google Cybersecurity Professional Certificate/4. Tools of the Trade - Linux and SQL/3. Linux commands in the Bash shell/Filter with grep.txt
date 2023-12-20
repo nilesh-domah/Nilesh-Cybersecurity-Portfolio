@@ -1,0 +1,42 @@
+Filter with grep
+----------------
+
+1. Search for error messages in a log file
+
+ a. Navigate to the /home/analyst/logs director
+
+	cd logs
+
+ b. Use grep to filter the server_logs.txt file, and return all lines containing the text string error
+
+	grep error server_logs.txt
+
+
+2. Find files containing specific strings
+
+ a. Navigate to the /home/analyst/reports/users directory
+
+	cd /home/analyst/reports/users
+
+ b. Using the pipe character, pipe the output of the ls command to the grep command to list only the files containing the string Q1 in their names
+
+	ls | grep Q1
+
+ c. List the files that contain the word access in their names
+
+	ls | grep access
+
+
+3. Search more file contents
+
+ a. Display the files in the /home/analyst/reports/users directory
+
+	ls
+
+ b. Search for Q2_deleted_users.txt file for the username jhill
+
+	grep jhill Q2_deleted_users.txt
+
+ c. Search the Q4_added_users.txt file to list the users who were added to the Human Resources department
+
+	grep "Human Resources" Q4_added_users.txt

@@ -1,0 +1,8 @@
+The CIA Triad
+--------------
+
+* Confidentiality is the idea that only authorized users can access specific assets or data
+
+* Integrity is the idea that the data is verifiably correct, authentic, and reliable.
+
+* Availability is the idea that data is accessible to those who are authorized to use it. 

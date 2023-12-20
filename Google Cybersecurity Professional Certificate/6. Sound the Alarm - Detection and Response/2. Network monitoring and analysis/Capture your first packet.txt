@@ -1,0 +1,48 @@
+Capture your first packet
+-------------------------
+
+1. Identify network interfaces
+
+ a. Identify the interfaces that are available
+
+	sudo ifconfig
+
+ b. Identify the interface options available for packet capture
+
+	sudo tcpdump -D
+
+
+
+2. Inspect the network traffic of a network interface with tcpdump
+
+ a. Filter live network packet data from the eth0 interface
+
+	sudo tcpdump -i eth0 -v -c5
+
+
+
+3. Capture network traffic with tcpdump
+
+ a. Capture packet data into a file called capture.pcap
+
+	sudo tcpdump -i eth0 -nn -c9 port 80 -w capture.pcap &
+
+ b. Generate some HTTP (port 80) traffic
+
+	curl opensource.google.com
+
+ c. Verify that packet data has been captured
+
+	ls -l capture.pcap
+
+
+
+4. Filter the captured packet data
+
+ a. Filter the pakcet header data from the capture.pcap capture file
+
+	sudo tcpdump -nn -r capture.pcap -v
+
+ b. Filter the extended packet data from the capture.pcap capture file
+
+	sudo tcpdump -nn -r capture.pcap -X
