@@ -1,9 +1,9 @@
 # Network Traffic Analysis
 ## Project Description
 This project enabled me to:
-- [x]Identify network interfaces
-- [x]Use the `tcpdump` command to capture data for inspection
-- [x]Interpret the information that `tcpdump` outputs regarding a packet
+- [x] Identify network interfaces
+- [x] Use the `tcpdump` command to capture data for inspection
+- [x] Interpret the information that `tcpdump` outputs regarding a packet
 - [x] Save and load packet data for later analysis
 ### Scenario
 As a network analyst we will use `tcpdump` to capture and analyze live network traffic on a Linux virtual machine
