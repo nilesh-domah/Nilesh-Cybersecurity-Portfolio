@@ -14,8 +14,6 @@ I created my homelab in VirtualBox and did the following:
 
   - In our scenario, we will be Analyzing Malware
   - We need to statically assign our IP addresses
-    - IP address: 192.168.20.10
-    - Subnet mask: 255.255.255.0
    
 ![connectivity](https://raw.githubusercontent.com/nilesh-domah/Nilesh-Cybersecurity-Portfolio/main/Portfolio%20Projects/Cybersecurity%20Homelab/connectivity.png)
 
