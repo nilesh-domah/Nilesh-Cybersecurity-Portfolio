@@ -1,4 +1,4 @@
-# Cybersecurity Homelab
+# Malware Analysis Homelab
 I created my homelab in VirtualBox and did the following:
 - [x] Setup a Kali attacking machine and a Windows 10 target machine
 - [x] Installed Splunk and Sysmon (Olaf configuration) on Windows virtual machine (VM)
