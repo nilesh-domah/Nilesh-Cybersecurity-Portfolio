@@ -73,6 +73,8 @@ Workflow:
 ![response](https://raw.githubusercontent.com/nilesh-domah/Nilesh-Cybersecurity-Portfolio/main/Portfolio%20Projects/SOC%20Automation%20Homelab/active%20response.png)
 
 ## Future Considerations
-
+In the future I could:
+- automatically reset an account from active directory if a user entered their credentials on a phishing page
+- contain a host if there was suspicous activity (like `mimikatz` example)
 
 
